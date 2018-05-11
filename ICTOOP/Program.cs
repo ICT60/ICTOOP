@@ -26,8 +26,9 @@ namespace ICTOOP
             player.DefenseStat = new Status(30, 30);
 
 
-            monster = new Monster("Monster", 100, 100);
+            monster = new Monster();
 
+            monster.Name = "Monster";
             monster.HealthStat = new Status(40, 40);
             monster.AttackStat = new Status(100, 100);
             monster.DefenseStat = new Status(30, 30);
