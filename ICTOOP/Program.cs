@@ -33,7 +33,7 @@ namespace ICTOOP
             boss.AttackStat = new Status(100, 100);
             boss.DefenseStat = new Status(30, 30);
 
-            boss.IsImmortal = true;
+            boss.IsImmortal = false;
         }
 
         void Run()
