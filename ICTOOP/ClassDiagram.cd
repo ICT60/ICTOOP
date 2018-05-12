@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ICTOOP.Lib.Actor" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAgBAAAEACAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\Actor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICTOOP.Lib.Boss" Collapsed="true">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\Boss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICTOOP.Lib.GameController">
+    <Position X="9" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="ICTOOP.Lib.GameController.Func" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Lib\GameController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAAAgAAAAIACAAgBAAAAAAAAAAAAAAgEAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\GameController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICTOOP.Lib.GameObject" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICTOOP.Lib.Hero" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\Hero.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICTOOP.Lib.Monster" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABAAAAAAAAAAAAAABAAAgAAABACAAAAAAAAA=</HashCode>
+      <FileName>Lib\Monster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICTOOP.Lib.Player" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Lib\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ICTOOP.Lib.Slime" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\Slime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICTOOP.Lib.Status">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAAAAAAAAAAAAAAACCBAAAAAAAAAAAAAAIBABACAA=</HashCode>
+      <FileName>Lib\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ICTOOP.Lib.IAttackAble&lt;T&gt;">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\IAttackAble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ICTOOP.Lib.IBotBehaviour">
+    <Position X="6.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEABAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Lib\IBotBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ICTOOP.Lib.IControlable">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Lib\IControlable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ICTOOP.Lib.IDamageAble&lt;T&gt;">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\IDamageAble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ICTOOP.Lib.IImprovable">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lib\IImprovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
