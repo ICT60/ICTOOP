@@ -4,8 +4,6 @@ namespace ICTOOP.Lib
 {
     abstract class Actor : GameObject, IAttackAble<Actor>, IDamageAble<float>
     {
-        public uint Level { get; set; }
-
         public Status HealthStat { get; set; }
         public Status AttackStat { get; set; }
         public Status DefenseStat { get; set; }
@@ -32,11 +30,6 @@ namespace ICTOOP.Lib
             DefenseStat = new Status(0, 0);
         }
 
-        public void LevelUp()
-        {
-            Level += 1;
-        }
-
         public virtual void Attack(Actor actor)
         {
             string format = "{0} is attacking [ {1} ].";
@@ -44,7 +37,7 @@ namespace ICTOOP.Lib
             actor.ReceiveDamage(AttackStat.Current);
         }
 
-        public void ReceiveDamage(float value)
+        public virtual void ReceiveDamage(float value)
         {
             if (value < DefenseStat.Current) { return; }
             HealthStat.Remove(value - DefenseStat.Current);

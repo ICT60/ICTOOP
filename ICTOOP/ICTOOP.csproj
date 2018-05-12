@@ -43,14 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lib\Actor.cs" />
+    <Compile Include="Lib\Boss.cs" />
     <Compile Include="Lib\GameController.cs" />
     <Compile Include="Lib\GameObject.cs" />
+    <Compile Include="Lib\Hero.cs" />
     <Compile Include="Lib\IAttackAble.cs" />
     <Compile Include="Lib\IBotBehaviour.cs" />
     <Compile Include="Lib\IControlable.cs" />
     <Compile Include="Lib\IDamageAble.cs" />
+    <Compile Include="Lib\IImprovable.cs" />
     <Compile Include="Lib\Monster.cs" />
     <Compile Include="Lib\Player.cs" />
+    <Compile Include="Lib\Slime.cs" />
     <Compile Include="Lib\Status.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

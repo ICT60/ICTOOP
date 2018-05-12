@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace ICTOOP.Lib
+﻿namespace ICTOOP.Lib
 {
-    class Player : Actor, IControlable 
+    class Player : Hero, IControlable 
     {
         public Player() : base()
         {
@@ -21,7 +19,7 @@ namespace ICTOOP.Lib
 
         public void InputHandler()
         {
-
+            //implement input handling here..
         }
     }
 }

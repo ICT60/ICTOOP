@@ -2,8 +2,11 @@
 
 namespace ICTOOP.Lib
 {
-    class Monster : Actor, IBotBehaviour
+    abstract class Monster : Actor, IImprovable, IBotBehaviour
     {
+        public uint Level { get; set; }
+
+
         public Monster() : base()
         {
 
@@ -19,22 +22,27 @@ namespace ICTOOP.Lib
 
         }
 
-        public void AttackNearbyEnemy()
+        public void LevelUp()
+        {
+            Level += 1;
+        }
+
+        public virtual void AttackNearbyEnemy()
         {
             Console.WriteLine(Name + " about to attack a nearby enemy..");
         }
 
-        public void AvoidHit()
+        public virtual void AvoidHit()
         {
             Console.WriteLine(Name + " about to avoid a hit..");
         }
 
-        public void AvoidObstacle()
+        public virtual void AvoidObstacle()
         {
             Console.WriteLine(Name + " about to avoid an obstacl..");
         }
 
-        public void MoveToTarget()
+        public virtual void MoveToTarget()
         {
             Console.WriteLine(Name + " about to move to target..");
         }

@@ -6,7 +6,7 @@ namespace ICTOOP
     class Program
     {
         Player player;
-        Monster monster;
+        Boss boss;
 
 
         static void Main(string[] args)
@@ -26,12 +26,14 @@ namespace ICTOOP
             player.DefenseStat = new Status(30, 30);
 
 
-            monster = new Monster();
+            boss = new Boss();
 
-            monster.Name = "Monster";
-            monster.HealthStat = new Status(40, 40);
-            monster.AttackStat = new Status(100, 100);
-            monster.DefenseStat = new Status(30, 30);
+            boss.Name = "Boss";
+            boss.HealthStat = new Status(40, 40);
+            boss.AttackStat = new Status(100, 100);
+            boss.DefenseStat = new Status(30, 30);
+
+            boss.IsImmortal = true;
         }
 
         void Run()
@@ -49,21 +51,21 @@ namespace ICTOOP
         void AttackPhrase_1()
         {
             Console.WriteLine("Attack phase : 1");
-            player.Attack(monster);
+            player.Attack(boss);
             ShowCurrentGameInfo();
         }
 
         void AttackPhrase_2()
         {
             Console.WriteLine("Attack phase : 2");
-            monster.Attack(player);
+            boss.Attack(player);
             ShowCurrentGameInfo();
         }
 
         void AttackPhrase_3()
         {
             Console.WriteLine("Attack phase : 3");
-            player.Attack(monster);
+            player.Attack(boss);
             ShowCurrentGameInfo();
         }
 
@@ -72,7 +74,7 @@ namespace ICTOOP
             Console.WriteLine("------------------------------");
             Console.WriteLine("Stat : ");
             Console.WriteLine(player.ToString());
-            Console.WriteLine(monster.ToString());
+            Console.WriteLine(boss.ToString());
         }
 
         void OnGameStart()
